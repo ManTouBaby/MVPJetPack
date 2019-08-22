@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是一个默认头部" />
+
+    <com.hrw.mvplibrary.widget.smartContainer.SmartContainer
+        android:id="@+id/sc_container"
+        android:layout_width="match_parent"
+        android:background="#8888"
+        android:layout_height="268dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="visible"
+            android:background="#567">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="这个测试控件" />
+        </RelativeLayout>
+    </com.hrw.mvplibrary.widget.smartContainer.SmartContainer>
+</LinearLayout>
