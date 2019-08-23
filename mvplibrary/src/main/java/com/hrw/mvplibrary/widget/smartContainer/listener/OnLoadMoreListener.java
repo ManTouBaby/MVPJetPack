@@ -7,4 +7,5 @@ package com.hrw.mvplibrary.widget.smartContainer.listener;
  * @desc:
  */
 public interface OnLoadMoreListener {
+    void onLoading();
 }

@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hrw.mvplibrary.R;
+import com.hrw.mvplibrary.widget.smartContainer.SmartViewUtil;
 import com.hrw.mvplibrary.widget.smartContainer.base.BaseRefreshView;
 import com.hrw.mvplibrary.widget.smartContainer.base.RefreshStatus;
 
@@ -29,7 +30,7 @@ public class DefaultHeaderView extends RelativeLayout implements BaseRefreshView
 
     public DefaultHeaderView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mDensity = context.getResources().getDisplayMetrics().density;
+        mDensity = SmartViewUtil.getDensity(context);
         addView(LayoutInflater.from(context).inflate(R.layout.smart_refresh_view_layout, null));
         mRefreshViewContent = findViewById(R.id.smart_refresh_view_content);
     }

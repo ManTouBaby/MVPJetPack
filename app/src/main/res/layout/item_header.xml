@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#4444"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/smart_load_more_label"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="128dp"
+        android:background="#693024"
         android:gravity="center"
-        android:text="上拉加载" />
+        android:text="我是头部"
+        android:textSize="16sp" />
+
 </RelativeLayout>

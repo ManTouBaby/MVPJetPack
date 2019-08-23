@@ -4,28 +4,15 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="这是一个默认头部" />
-
     <com.hrw.mvplibrary.widget.smartContainer.SmartContainer
         android:id="@+id/sc_container"
         android:layout_width="match_parent"
-        android:background="#8888"
-        android:layout_height="268dp">
+        android:layout_height="match_parent"
+        android:background="#8888">
 
-        <RelativeLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_show_content"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:visibility="visible"
-            android:background="#567">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="这个测试控件" />
-        </RelativeLayout>
+            android:layout_height="wrap_content" />
     </com.hrw.mvplibrary.widget.smartContainer.SmartContainer>
 </LinearLayout>

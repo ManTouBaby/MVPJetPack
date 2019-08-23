@@ -15,5 +15,6 @@ public interface BaseRefreshView {
     /*获取内容控件*/
     View getContentView();
 
+    /*刷新状态变化*/
     void onRefreshStatusChange(RefreshStatus refreshStatus);
 }

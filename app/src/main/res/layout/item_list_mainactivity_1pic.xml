@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/item_list_main_port"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/item_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/item_list_main_port"
+        android:text="高级选品师"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_list_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_list_name"
+        android:layout_below="@+id/item_list_name"
+        android:text=""
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_list_main_port"
+        android:layout_marginTop="4dp"
+        android:text="我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_below="@+id/item_remark"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/iv_img_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_image_bg" />
+
+        
+    </LinearLayout>
+</RelativeLayout>
